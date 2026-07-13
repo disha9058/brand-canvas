@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Printer, Palette, Zap, Package, Leaf, ShieldCheck, MapPin, Layers } from "lucide-react";
+import { Printer, Palette, Zap, Package, Leaf, ShieldCheck, MapPin, Layers, Boxes } from "lucide-react";
 
 const items = [
   { icon: Printer, title: "Premium DTF printing", desc: "Vibrant, durable prints on almost any fabric.", span: "md:col-span-2 md:row-span-2", dark: true },
@@ -10,6 +10,7 @@ const items = [
   { icon: ShieldCheck, title: "Quality checked", desc: "Every piece inspected before dispatch.", accent: true },
   { icon: Leaf, title: "Eco-friendly inks", desc: "Water-based, OEKO-TEX certified." },
   { icon: MapPin, title: "Made in India", desc: "In-house production, no middlemen." },
+  { icon: Boxes, title: "No MOQs", desc: "Order from just 1 piece or scale to thousands. Perfect for startups, creators, corporate gifting, and bulk orders." },
 ];
 
 export function WhyUs() {
