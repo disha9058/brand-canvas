@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/inkcognito-logo.asset.json";
 
 const links = [
   { href: "#products", label: "Products" },
@@ -40,8 +41,7 @@ export function Navbar() {
             }`}
           >
             <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight">
-              <span className="grid h-8 w-8 place-items-center rounded-full bg-ink text-cream">◆</span>
-              <span>Brand<span className="text-ember">.</span></span>
+              <img src={logo.url} alt="INKCOGNITO" className="h-10 w-auto object-contain" />
             </a>
             <nav className="hidden items-center gap-8 md:flex">
               {links.map((l) => (
@@ -83,7 +83,9 @@ export function Navbar() {
             className="fixed inset-0 z-[60] bg-ink text-cream md:hidden"
           >
             <div className="flex items-center justify-between px-6 pt-6">
-              <span className="font-display text-lg font-bold">Brand<span className="text-ember">.</span></span>
+              <span className="font-display text-lg font-bold tracking-tight">
+                INK<span className="text-ember">COGNITO</span>
+              </span>
               <button aria-label="Close" onClick={() => setOpen(false)} className="grid h-10 w-10 place-items-center rounded-full bg-white/10">
                 <X className="h-5 w-5" />
               </button>

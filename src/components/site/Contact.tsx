@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, MessageCircle, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Phone, Globe, Clock, ArrowRight } from "lucide-react";
 
 function Field({ label, name, type = "text", placeholder }: { label: string; name: string; type?: string; placeholder?: string }) {
   return (
@@ -34,10 +34,11 @@ export function Contact() {
 
             <div className="mt-10 space-y-4">
               {[
-                { i: Phone, t: "Call", v: "+91 00000 00000" },
-                { i: MessageCircle, t: "WhatsApp", v: "Chat with sales" },
-                { i: Mail, t: "Email", v: "hello@brand.in" },
-                { i: MapPin, t: "Studio", v: "Bengaluru, India" },
+                { i: MapPin, t: "Studio", v: "Jaipur, Rajasthan, India" },
+                { i: Phone, t: "Call", v: "+91 78510 37394" },
+                { i: Mail, t: "Email", v: "info@inkcognito.com" },
+                { i: Globe, t: "Website", v: "www.inkcognito.in" },
+                { i: Clock, t: "Business hours", v: "Mon – Sun · 10:00 AM – 7:00 PM" },
               ].map((c) => (
                 <a key={c.t} href="#" className="group flex items-center gap-4 rounded-2xl border border-white/10 p-4 transition-colors hover:border-ember">
                   <span className="grid h-11 w-11 place-items-center rounded-xl bg-white/5 text-ember">
@@ -51,10 +52,10 @@ export function Contact() {
               ))}
             </div>
 
-            <div className="mt-8 h-52 overflow-hidden rounded-3xl border border-white/10 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.08),transparent_60%)]">
-              <div className="grid h-full place-items-center text-xs uppercase tracking-widest text-cream/40">
-                Google Map placeholder
-              </div>
+            <div className="mt-8 rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+              <div className="text-[11px] uppercase tracking-widest text-cream/50">Registered entity</div>
+              <div className="mt-2 font-display text-xl font-bold">INKCOGNITO Advertising Services LLP</div>
+              <p className="mt-2 text-sm text-cream/60">Jaipur, Rajasthan, India</p>
             </div>
           </div>
 
