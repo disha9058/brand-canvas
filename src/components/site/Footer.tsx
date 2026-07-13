@@ -1,3 +1,5 @@
+import logo from "@/assets/inkcognito-logo.asset.json";
+
 function FooterCol({ title, items }: { title: string; items: string[] }) {
   return (
     <div>
@@ -17,11 +19,12 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col justify-between gap-10 md:flex-row md:items-end">
           <div>
-            <div className="font-display text-4xl font-bold tracking-tight md:text-6xl">
+            <img src={logo.url} alt="INKCOGNITO Advertising Services LLP" className="h-20 w-auto object-contain" />
+            <div className="mt-6 font-display text-4xl font-bold tracking-tight md:text-6xl">
               Wear your <span className="italic text-ember">brand.</span>
             </div>
             <p className="mt-4 max-w-md text-sm text-foreground/55">
-              Custom merch that doesn't end up in a drawer. Made in India, made properly.
+              INKCOGNITO Advertising Services LLP — custom merch that doesn't end up in a drawer. Made in Jaipur, India.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-10 text-sm sm:grid-cols-3">
@@ -31,7 +34,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-black/10 pt-6 text-xs text-foreground/50 md:flex-row md:items-center">
-          <div>© {new Date().getFullYear()} Brand. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} INKCOGNITO Advertising Services LLP. All rights reserved.</div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-foreground">Privacy</a>
             <a href="#" className="hover:text-foreground">Terms</a>
