@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/inkcognito-logo.asset.json";
 
 const links = [
   { href: "#products", label: "Products" },
@@ -41,7 +40,7 @@ export function Navbar() {
             }`}
           >
             <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight">
-              <img src={logo.url} alt="INKCOGNITO" className="h-10 w-auto object-contain" />
+              <img src="/inkcognito-logo.jpeg" alt="INKCOGNITO" className="h-10 w-auto object-contain" />
             </a>
             <nav className="hidden items-center gap-8 md:flex">
               {links.map((l) => (
