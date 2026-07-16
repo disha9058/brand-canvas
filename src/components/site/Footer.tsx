@@ -1,4 +1,3 @@
-import logo from "@/assets/inkcognito-logo.asset.json";
 
 function FooterCol({ title, items }: { title: string; items: string[] }) {
   return (
@@ -19,7 +18,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col justify-between gap-10 md:flex-row md:items-end">
           <div>
-            <img src={logo.url} alt="INKCOGNITO Advertising Services LLP" className="h-20 w-auto object-contain" />
+            <img src="/inkcognito-logo.jpeg" alt="INKCOGNITO Advertising Services LLP" className="h-20 w-auto object-contain" />
             <div className="mt-6 font-display text-4xl font-bold tracking-tight md:text-6xl">
               Wear your <span className="italic text-ember">brand.</span>
             </div>
